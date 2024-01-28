@@ -21,6 +21,7 @@ export class LessonService {
       endDate,
       students,
     });
+
     return this.lessonRepository.save(lesson);
   }
 
