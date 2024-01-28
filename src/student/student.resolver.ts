@@ -19,4 +19,9 @@ export class StudentResolver {
   students() {
     return this.studentService.getStudents();
   }
+
+  @Query(() => StudentType)
+  student(@Args('id') id: string) {
+    return this.studentService.getStudent(id);
+  }
 }
